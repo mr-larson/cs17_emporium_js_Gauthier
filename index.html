@@ -12,9 +12,15 @@
         <link rel="stylesheet" type="html/css" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
         <!--Lien CSS-->                                          
         <link rel="stylesheet" href="./public/css/style.css">
+        <script>  
+            function changeColor(color) { 
+                document.body.style.background = color; 
+            }
+        </script>  
     </head>
     <body> 
-<!-- logo --> 
+        
+        <!-- logo --> 
         <header class="container-fluid"> 
             <section id="logo" class="row">
                 <div class="col d-flex justify-content-center align">
@@ -22,7 +28,7 @@
                 </div>
             </section>
         </header>
-<!-- navbar -->
+        <!-- navbar -->
         <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
             <a id="minilogo" class="navbar-brand" href="#">emporium</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,9 +42,9 @@
                     <a class="nav-item nav-link" href="#">ELEMENTS</a>
                     <a class="nav-item nav-link" href="#">A PROPOS</a>
                     <a class="nav-item nav-link" href="#">CONTACT</a>
-                    <!-- <a class="nav-item nav-link disabled" href="#">Disabled</a> -->
-                    <button id="btn_white" class="btn btn-sm btn-outline-light" type="button"></bouton >
-                    <button id="btn_black" class="btn btn-sm btn-outline-dark" type="button"></bouton >
+                    <!-- <a class="nav-item nav-link disabled" href="#">Disabled</a> --> 
+                    <button onclick = "changeColor('white');" id="btn_white" class="btn btn-sm btn-outline-light" type="button"></bouton >
+                    <button onclick = "changeColor('black');" id="btn_black" class="btn btn-sm btn-outline-dark" type="button"></bouton >
                     <button id="btn_connexion" class="btn btn-sm btn-outline-secondary" type="button">connexion</bouton >
                 </div>
             </div>
