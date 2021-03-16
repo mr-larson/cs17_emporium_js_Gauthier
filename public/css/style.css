@@ -1,10 +1,43 @@
 /*-------------- lien sass --------------*/
-/*nav*/
-/*main*/ 
+/*Header*/
+/*variables*/
+#header {
+  background: #B000B5;
+}
+#header #logo {
+  background: #fb1;
+  padding: 40px 0;
+}
+#header #miniature {
+  display: none;
+}
+#header #navbar_item {
+  font-size: 10px;
+}
+#header #navbar_item li {
+  padding: 0 10px;
+}
+#header #navbar_item li .btn {
+  margin: 0 2px;
+}
+#header #navbar_item li #btn_white {
+  height: 15px;
+  border: #747373 1px solid;
+}
+#header #navbar_item li #btn_black {
+  height: 15px;
+  border: #747373 1px solid;
+}
+
+/*Body1*/ 
 /*footer*/
 /*variables*/
-
-/*# sourceMappingURL=style.css.map */
-
+/*fonts*/
+@font-face {
+  font-family: "PoppinsRegular";
+  src: url("../../public/fonts/Poppins-Regular.ttf");
+}
+/** bootstrap **/
 /*---------------- style -------------*/
 
+/*# sourceMappingURL=style.css.map */
