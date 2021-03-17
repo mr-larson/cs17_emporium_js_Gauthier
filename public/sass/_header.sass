@@ -40,6 +40,60 @@ nav
                 height: 28px
                 
                     
-                
+// formulaire
+.text
+    width: 100%
+    padding: 15px
+    margin: 5px 0 22px 0
+    display: inline-block
+    border: none
+    background: $light
+.text:hover
+    box-shadow: 0 0 5px rgb(44, 41, 41)
+    transition: 0.3s
+.text:focus
+    outline: none
+    background: #c9c9c9   
+.button
+    background: $red
+    color: $white
+    padding: 14px 20px
+    margin: 8px
+    border: none
+    width: 47%
+.button:hover
+    box-shadow: 0 0 5px rgb(44, 41, 41)
+    transition: 0.3s
+
+.modal
+    display: none
+    position: fixed
+    z-index: 1
+    background: $grey
+    width: 100%
+    height: 100%
+    overflow: auto
+    padding-top: 50px
+    
+.modal-content
+    border: solid 2px #000
+    
+    
+.close
+    font-size: 30px
+    font-weight: bold
+    color: $red
+.close:hover
+    text-shadow: 0 0 5px rgba(184, 180, 180, 0.795)
+    transition: 0.3s
+    cursor: pointer
+.clearfix::after
+    content: ""
+    clear: both
+    display: table
+@media screen and (max-width: 300px) 
+  .cancelbtn, .signupbtn 
+     width: 100%
+  
 
 

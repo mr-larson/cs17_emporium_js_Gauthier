@@ -16,10 +16,9 @@
             function changeColor(color) { 
                 document.body.style.background = color; 
             }
-            // Get the modal
-            var modal = document.getElementById('id01');
+            // variables modal
+            let modal = document.getElementById('id01');
 
-            // When the user clicks anywhere outside of the modal, close it
             window.onclick = function(event) {
                 if (event.target == modal) {
                 modal.style.display = "none";
@@ -67,13 +66,13 @@
                                     <p>Please fill in this form to create an account.</p>
                                     <hr>
                                     <label for="email"><b>Email</b></label>
-                                    <input type="text" placeholder="Enter Email" name="email" required>
+                                    <input class="text" type="text" placeholder="Enter Email" name="email" required>
                             
                                     <label for="psw"><b>Password</b></label>
-                                    <input type="password" placeholder="Enter Password" name="psw" required>
+                                    <input class="text" type="password" placeholder="Enter Password" name="psw" required>
                             
                                     <label for="psw-repeat"><b>Repeat Password</b></label>
-                                    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                                    <input class="text" type="password" placeholder="Repeat Password" name="psw-repeat" required>
                                 
                                     <label>
                                         <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
@@ -82,8 +81,8 @@
                                     <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
                             
                                     <div class="clearfix">
-                                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                                        <button type="submit" class="signupbtn">Sign Up</button>
+                                        <button class="button" type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                        <button class="button" type="submit" class="signupbtn">Sign Up</button>
                                     </div>
                                 </div>
                             </form>
@@ -111,21 +110,89 @@
         <div id="section2" class="container">
             <div class="row">
                 <div class="mycard col-sm-3">
-                    Living Room
+                    <p>Living Room</p> 
                 </div>
                 <div class="mycard col-sm-3">
-                    Sale Items
+                    <p>Sale Items</p> 
                 </div>
                 <div class="mycard col-sm-3">
-                    Clothes
+                    <p>Clothes</p>
                 </div>
             </div>
         </div>
-
+<!-- section 3 -->
+        <div id="all-products" class="container">
+            <h3>Recent Products</h3>
+            <div class="row products">
+                <div class="col-md-4">
+                    <img src="./public/img/products_mini/product-luxry-sofa.jpg" alt="luxury">
+                    <h5>Luxury Sofa</h5>
+                    <span class="color-red bold">$600.00</span>
+                </div>
+                <div class="col-md-4">
+                    <img src="./public/img/products_mini/product-gloves.jpg" alt="gloves">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="mx-3">
+                            <span class="p-4 bg-red round color-white uppercase">sale!</span>
+                        </div>
+                        <div>
+                            <h5>Leather Gloves</h5>
+                            <span class="line color-grey bold">$34.00</span>
+                            <span class="color-red bold">$27.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="./public/img/products_mini/product-cups.jpg" alt="cups">
+                    <h5>Colorful Bowl</h5>
+                    <span class="color-red bold">$18.00</span>
+                </div>
+                <div class="col-md-4">
+                    <img src="./public/img/products_mini/product-bag.jpg" alt="">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="mx-3">
+                            <span class="p-4 bg-red round color-white uppercase">sale!</span>
+                        </div>
+                        <div>
+                            <h5>Women Bag</h5>
+                            <span class="line color-grey bold">$34.00</span>
+                            <span class="color-red bold">$27.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="./public/img/products_mini/product-tshitr.jpg" alt="">
+                    <h5>Minimal T-Shirt</h5>
+                    <span class="color-red bold">$15.00</span>
+                </div>
+                <div class="col-md-4">
+                    <img src="./public/img/products_mini/product-plates.jpg" alt="">
+                    <h5>Plates Set</h5>
+                    <span class="color-red bold">$30.00</span>
+                </div>
+                <div class="col-md-4">
+                    <img src="./public/img/products_mini/product-modern-sofa.jpg" alt="">
+                    <h5>Modern Sofa</h5>
+                    <span class="color-red bold">$900.00</span>
+                </div>
+                <div class="col-md-4">
+                    <img src="./public/img/products_mini/product-bed.jpg" alt="">
+                    <h5>Bed Linen</h5>
+                    <span class="color-red bold">$79.00</span>
+                </div>
+                <div class="col-md-4">
+                    <img src="./public/img/products_mini/product-shoes.jpg" alt="">
+                    <h5>Minimal Shoes</h5>
+                    <span class="color-red bold">$60.00</span>
+                </div>
+            </div>
+        </div>
 <!-- section 4 -->
-        <div id="section4" class="container-fluid">
-            <h4 class="text-white">Discover Thousands Of Great products</h4>
-            <a href="#" class="btn btn-dark">LEARN MORE</a>
+        <div id="section4"  class="container-fluid">
+            <div>
+                <h4 class="text-white">Discover Thousands Of Great products</h4>
+                <a href="#" class="btn btn-dark">LEARN MORE</a>
+            </div>
         </div>
 
 <!-- section 6 -->
@@ -160,8 +227,8 @@
 <!-- Footer -->
         <footer class="footer text-center text-lg-start">
             <div class="container p-4">
-                <div class="row">
-                    <div class="col-lg-6 col-md-12 mb-3 mb-md-0">
+                <div class="row insid">
+                    <div class="col-lg-4 col-md-12 mb-3 mb-md-0">
                         <h5 class="text-uppercase">ABOUT US</h5>
                         <p>
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
@@ -172,7 +239,7 @@
                         </p>
                     </div>
                     
-                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
                         <h5 class="text-uppercase">RECENTS POSTS</h5>
                         <ul class="recentposts mb-0">
                             <li>
@@ -190,7 +257,7 @@
                         </ul>
                     </div>
                     
-                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
                         <h5 class="text-uppercase mb-0">TAG CLOUD</h5>
                         <ul class="list-unstyled">
                             <li><a href="#">business</a></li>
