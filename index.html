@@ -16,9 +16,19 @@
             function changeColor(color) { 
                 document.body.style.background = color; 
             }
+            // Get the modal
+            var modal = document.getElementById('id01');
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                modal.style.display = "none";
+                }
+            }
         </script>
     </head>
     <body> 
+
         
 <!-- logo --> 
         <header class="container-fluid"> 
@@ -45,7 +55,40 @@
                     <!-- <a class="nav-item nav-link disabled" href="#">Disabled</a> --> 
                     <button onclick = "changeColor('white');" id="btn_white" class="btn btn-sm btn-outline-light" type="button"></bouton >
                     <button onclick = "changeColor('black');" id="btn_black" class="btn btn-sm btn-outline-dark" type="button"></bouton >
-                    <button id="btn_connexion" class="btn btn-sm btn-outline-secondary" type="button">connexion</bouton >
+                    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="btn btn-sm btn-outline-secondary">Connexion</button>
+                    <!-- form -->        
+                    <div class="form">
+                        
+                        <div id="id01" class="w-50 p-3 modal">
+                            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                            <form class="modal-content" action="/action_page.php">
+                                <div class="container">
+                                    <h1>Sign Up</h1>
+                                    <p>Please fill in this form to create an account.</p>
+                                    <hr>
+                                    <label for="email"><b>Email</b></label>
+                                    <input type="text" placeholder="Enter Email" name="email" required>
+                            
+                                    <label for="psw"><b>Password</b></label>
+                                    <input type="password" placeholder="Enter Password" name="psw" required>
+                            
+                                    <label for="psw-repeat"><b>Repeat Password</b></label>
+                                    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                                
+                                    <label>
+                                        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                                    </label>
+                            
+                                    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+                            
+                                    <div class="clearfix">
+                                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                        <button type="submit" class="signupbtn">Sign Up</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div> 
                 </div>
             </div>
         </nav>
