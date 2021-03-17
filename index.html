@@ -37,6 +37,7 @@
                 </div>
             </section>
         </header>
+
 <!-- navbar -->
         <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
             <a id="minilogo" class="navbar-brand" href="#">emporium.</a>
@@ -55,7 +56,7 @@
                     <button onclick = "changeColor('white');" id="btn_white" class="btn btn-sm btn-outline-light" type="button"></bouton >
                     <button onclick = "changeColor('black');" id="btn_black" class="btn btn-sm btn-outline-dark" type="button"></bouton >
                     <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="btn btn-sm btn-outline-secondary">Connexion</button>
-                    <!-- form -->        
+<!-- form -->        
                     <div class="form">
                         
                         <div id="id01" class="w-50 p-3 modal">
@@ -91,6 +92,7 @@
                 </div>
             </div>
         </nav>
+
 <!-- section 1 -->
         <section id="section1" class="container-fluid">
             <div id="shop" class="row">
@@ -106,30 +108,32 @@
                 </div>
             </div>
         </section> 
+
 <!-- section 2 -->
         <div id="section2" class="container">
             <div class="row">
-                <div class="mycard col-sm-3">
+                <div id="cardone" class="mycard col-sm-3">
                     <p>Living Room</p> 
                 </div>
-                <div class="mycard col-sm-3">
+                <div id="cardtwo" class="mycard col-sm-3">
                     <p>Sale Items</p> 
                 </div>
-                <div class="mycard col-sm-3">
+                <div id="cardthree" class="mycard col-sm-3">
                     <p>Clothes</p>
                 </div>
             </div>
         </div>
+
 <!-- section 3 -->
         <div id="section3" class="container">
             <h3 id="text">Recent Products</h3>
             <div class="row products">
-                <div class="col-md-4">
+                <div class="shopcard col-md-4">
                     <img src="./public/img/products_mini/product-luxry-sofa.jpg" alt="luxury">
                     <h5 id="text">Luxury Sofa</h5>
                     <span class="color-red bold">$600.00</span>
                 </div>
-                <div class="col-md-4">
+                <div class="shopcard col-md-4">
                     <img src="./public/img/products_mini/product-gloves.jpg" alt="gloves">
                     <div class="d-flex justify-content-center align-items-center">
                         <div class="mx-3">
@@ -142,12 +146,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="shopcard col-md-4">
                     <img src="./public/img/products_mini/product-cups.jpg" alt="cups">
                     <h5 id="text">Colorful Bowl</h5>
                     <span class="color-red bold">$18.00</span>
                 </div>
-                <div class="col-md-4">
+                <div class="shopcard col-md-4">
                     <img src="./public/img/products_mini/product-bag.jpg" alt="">
                     <div class="d-flex justify-content-center align-items-center">
                         <div class="mx-3">
@@ -160,38 +164,90 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="shopcard col-md-4">
                     <img src="./public/img/products_mini/product-tshitr.jpg" alt="">
                     <h5 id="text">Minimal T-Shirt</h5>
                     <span class="color-red bold">$15.00</span>
                 </div>
-                <div class="col-md-4">
+                <div class="shopcard col-md-4">
                     <img src="./public/img/products_mini/product-plates.jpg" alt="">
                     <h5 id="text">Plates Set</h5>
                     <span class="color-red bold">$30.00</span>
                 </div>
-                <div class="col-md-4">
+                <div class="shopcard col-md-4">
                     <img src="./public/img/products_mini/product-modern-sofa.jpg" alt="">
                     <h5 id="text">Modern Sofa</h5>
                     <span class="color-red bold">$900.00</span>
                 </div>
-                <div class="col-md-4">
+                <div class="shopcard col-md-4">
                     <img src="./public/img/products_mini/product-bed.jpg" alt="">
                     <h5 id="text">Bed Linen</h5>
                     <span class="color-red bold">$79.00</span>
                 </div>
-                <div class="col-md-4">
+                <div class="shopcard col-md-4">
                     <img src="./public/img/products_mini/product-shoes.jpg" alt="">
                     <h5 id="text">Minimal Shoes</h5>
                     <span class="color-red bold">$60.00</span>
                 </div>
             </div>
         </div>
+        
 <!-- section 4 -->
         <div id="section4"  class="container-fluid">
             <div>
                 <h4 class="text-white">Discover Thousands Of Great products</h4>
                 <a href="#" class="btn btn-dark">LEARN MORE</a>
+            </div>
+        </div>
+
+<!-- section 5 -->
+        <div id="slider" class="container">
+            <div class="button-left slider-button">
+                <span> < </span>
+            </div>
+            <div class="button-right slider-button">
+                <span> > </span>
+            </div>
+            <div class="row">
+                <div class="slide slide1 showing">
+                    <div class="col">    
+                        <div class="slide-image">
+                            <img src="./public/img/clem-onojeghuo-EpicwyE9eac-unsplash.jpg" alt="Bulle dans Sable">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="slide-image">
+                            <img src="./public/img/clem-onojeghuo-EpicwyE9eac-unsplash.jpg" alt="Bulle dans Sable">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="slide-image">
+                            <img src="./public/img/clem-onojeghuo-EpicwyE9eac-unsplash.jpg" alt="Bulle dans Sable">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide slide2">
+                <div class="slide-image">
+                    <img src="./public/img/wolfgang-hasselmann-koy2W-SXPnA-unsplash.jpg" alt="cactus blanc">
+                </div>
+                <div class="slide-image">
+                    <img src="./public/img/wolfgang-hasselmann-koy2W-SXPnA-unsplash.jpg" alt="cactus blanc">
+                </div>
+                <div class="slide-image">
+                    <img src="./public/img/wolfgang-hasselmann-koy2W-SXPnA-unsplash.jpg" alt="cactus blanc">
+                </div>
+            </div>
+            <div class="slide slide3">
+                <div class="slide-image">
+                    <img src="./public/img/dario-bronnimann-NwA9UWxGa6M-unsplash.jpg" alt="espace">
+                </div>
+                <div class="slide-image">
+                    <img src="./public/img/dario-bronnimann-NwA9UWxGa6M-unsplash.jpg" alt="espace">
+                </div>
+                <div class="slide-image">
+                    <img src="./public/img/dario-bronnimann-NwA9UWxGa6M-unsplash.jpg" alt="espace">
+                </div>
             </div>
         </div>
 
@@ -224,6 +280,7 @@
                 </div>
             </div>
         </div>
+
 <!-- Footer -->
         <footer id="footer" class="footer text-center text-lg-start">
             <div class="container p-4">
@@ -275,14 +332,14 @@
                 </div>
             </div>
         
-            <!-- Copyright -->
+<!-- Copyright -->
             <div class="text-center p-3" style="background-color: #000; color:rgb(85, 85, 85)">
             © COPYRIGHT 2020 GOODLAYERS ALL RIGHT RESERVED
             </div>
     
         </footer>
 
-        <!--lien JS-->
+<!--lien JS-->
         <script type="module" src="./public/javascript/main.js"></script>
     </body>
 </html>

@@ -187,6 +187,7 @@ nav #navbarNavAltMarkup .mynavbar #btn_connexion {
 /*---------------- style -------------*/    
 #section1 {
   background: #e6e6e6;
+  padding: 20px 0;
 }
 #section1 #shop {
   display: flex;
@@ -218,7 +219,7 @@ nav #navbarNavAltMarkup .mynavbar #btn_connexion {
 }
 #section1 #shop #tshirt img {
   filter: brightness(95%);
-  height: 70vh;
+  height: 50vh;
 }
 
 #section2 .row {
@@ -227,7 +228,7 @@ nav #navbarNavAltMarkup .mynavbar #btn_connexion {
   margin-top: 30px;
 }
 #section2 .row .mycard {
-  height: 20vh;
+  height: 17vh;
   border-bottom: solid #fff 1px;
   border: solid 2px #42424246;
   display: flex;
@@ -296,11 +297,14 @@ nav #navbarNavAltMarkup .mynavbar #btn_connexion {
   padding-top: 10vh;
   text-align: center;
 }
-#section3 h3 {
+#section3 .shopcard {
+  padding: 10px;
+}
+#section3 .shopcard h3 {
   text-align: center;
   padding-bottom: 20px;
 }
-#section3 img {
+#section3 .shopcard img {
   height: 30vh;
   width: 350px;
   padding-bottom: 20px;
