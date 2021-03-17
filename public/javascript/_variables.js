@@ -5,4 +5,3 @@
 
 
 // Export des Variables
-export {}
