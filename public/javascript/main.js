@@ -8,5 +8,9 @@
 /*----------------- Main.js ------------------------*/
 
 /* navbar */
-console.log('test');
+let body = document.querySelector('body')
+let text = document.querySelectorAll('text')
+if (body('background-color')==='black') {
+  text.style.color = "#FFF"
+}
 

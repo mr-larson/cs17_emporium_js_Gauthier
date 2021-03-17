@@ -38,6 +38,13 @@
 header {
   padding: 40px 0;
 }
+header #text {
+  padding-left: 30px;
+  letter-spacing: 2px;
+  color: #000;
+  font-size: 40px;
+  font-weight: bold;
+}
 
 nav {
   margin-bottom: 20px;
@@ -45,6 +52,9 @@ nav {
 nav a {
   padding-left: 30px;
   letter-spacing: 2px;
+}
+nav a:hover {
+  font-weight: bold;
 }
 nav #navbarNavAltMarkup .mynavbar .nav-item {
   font-size: 10px;
@@ -282,15 +292,15 @@ nav #navbarNavAltMarkup .mynavbar #btn_connexion {
 }
 
 /*---------------- style -------------*/    
-#all-products {
+#section3 {
   padding-top: 10vh;
   text-align: center;
 }
-#all-products h3 {
+#section3 h3 {
   text-align: center;
   padding-bottom: 20px;
 }
-#all-products img {
+#section3 img {
   height: 30vh;
   width: 350px;
   padding-bottom: 20px;

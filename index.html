@@ -33,25 +33,25 @@
         <header class="container-fluid"> 
             <section id="logo" class="row">
                 <div class="col d-flex justify-content-center align">
-                    <img src="./public/img/logo.png" alt="logo">
+                    <a id="text" class="navbar-brand" href="#">emporium.</a>
                 </div>
             </section>
         </header>
 <!-- navbar -->
         <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
-            <a id="minilogo" class="navbar-brand" href="#">emporium</a>
+            <a id="minilogo" class="navbar-brand" href="#">emporium.</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse d-flex justify-content-around" id="navbarNavAltMarkup">
                 <div class="navbar-nav mynavbar">
-                    <a class="nav-item nav-link active" href="#">HOME <!-- <span class="sr-only">(current)</span> --></a>
-                    <a class="nav-item nav-link" href="#">PRODUITS</a>
-                    <a class="nav-item nav-link" href="#">BLOG</a>
+                    <a class="nav-item nav-link active" href="#">HOME</a>
+                    <a class="nav-item nav-link" href="#section3">PRODUITS</a>
+                    <a class="nav-item nav-link" href="#section4">BLOG</a>
                     <a class="nav-item nav-link" href="#">ELEMENTS</a>
-                    <a class="nav-item nav-link" href="#">A PROPOS</a>
-                    <a class="nav-item nav-link" href="#">CONTACT</a>
-                    <!-- <a class="nav-item nav-link disabled" href="#">Disabled</a> --> 
+                    <a class="nav-item nav-link" href="#section6">A PROPOS</a>
+                    <a class="nav-item nav-link" href="#section1">CONTACT</a>
+                    
                     <button onclick = "changeColor('white');" id="btn_white" class="btn btn-sm btn-outline-light" type="button"></bouton >
                     <button onclick = "changeColor('black');" id="btn_black" class="btn btn-sm btn-outline-dark" type="button"></bouton >
                     <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="btn btn-sm btn-outline-secondary">Connexion</button>
@@ -121,12 +121,12 @@
             </div>
         </div>
 <!-- section 3 -->
-        <div id="all-products" class="container">
-            <h3>Recent Products</h3>
+        <div id="section3" class="container">
+            <h3 id="text">Recent Products</h3>
             <div class="row products">
                 <div class="col-md-4">
                     <img src="./public/img/products_mini/product-luxry-sofa.jpg" alt="luxury">
-                    <h5>Luxury Sofa</h5>
+                    <h5 id="text">Luxury Sofa</h5>
                     <span class="color-red bold">$600.00</span>
                 </div>
                 <div class="col-md-4">
@@ -136,7 +136,7 @@
                             <span class="p-4 bg-red round color-white uppercase">sale!</span>
                         </div>
                         <div>
-                            <h5>Leather Gloves</h5>
+                            <h5 id="text">Leather Gloves</h5>
                             <span class="line color-grey bold">$34.00</span>
                             <span class="color-red bold">$27.00</span>
                         </div>
@@ -144,7 +144,7 @@
                 </div>
                 <div class="col-md-4">
                     <img src="./public/img/products_mini/product-cups.jpg" alt="cups">
-                    <h5>Colorful Bowl</h5>
+                    <h5 id="text">Colorful Bowl</h5>
                     <span class="color-red bold">$18.00</span>
                 </div>
                 <div class="col-md-4">
@@ -154,7 +154,7 @@
                             <span class="p-4 bg-red round color-white uppercase">sale!</span>
                         </div>
                         <div>
-                            <h5>Women Bag</h5>
+                            <h5 id="text">Women Bag</h5>
                             <span class="line color-grey bold">$34.00</span>
                             <span class="color-red bold">$27.00</span>
                         </div>
@@ -162,27 +162,27 @@
                 </div>
                 <div class="col-md-4">
                     <img src="./public/img/products_mini/product-tshitr.jpg" alt="">
-                    <h5>Minimal T-Shirt</h5>
+                    <h5 id="text">Minimal T-Shirt</h5>
                     <span class="color-red bold">$15.00</span>
                 </div>
                 <div class="col-md-4">
                     <img src="./public/img/products_mini/product-plates.jpg" alt="">
-                    <h5>Plates Set</h5>
+                    <h5 id="text">Plates Set</h5>
                     <span class="color-red bold">$30.00</span>
                 </div>
                 <div class="col-md-4">
                     <img src="./public/img/products_mini/product-modern-sofa.jpg" alt="">
-                    <h5>Modern Sofa</h5>
+                    <h5 id="text">Modern Sofa</h5>
                     <span class="color-red bold">$900.00</span>
                 </div>
                 <div class="col-md-4">
                     <img src="./public/img/products_mini/product-bed.jpg" alt="">
-                    <h5>Bed Linen</h5>
+                    <h5 id="text">Bed Linen</h5>
                     <span class="color-red bold">$79.00</span>
                 </div>
                 <div class="col-md-4">
                     <img src="./public/img/products_mini/product-shoes.jpg" alt="">
-                    <h5>Minimal Shoes</h5>
+                    <h5 id="text">Minimal Shoes</h5>
                     <span class="color-red bold">$60.00</span>
                 </div>
             </div>
@@ -225,7 +225,7 @@
             </div>
         </div>
 <!-- Footer -->
-        <footer class="footer text-center text-lg-start">
+        <footer id="footer" class="footer text-center text-lg-start">
             <div class="container p-4">
                 <div class="row insid">
                     <div class="col-lg-4 col-md-12 mb-3 mb-md-0">
