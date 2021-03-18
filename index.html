@@ -13,17 +13,35 @@
         <!--Lien CSS-->                                          
         <link rel="stylesheet" href="./public/css/style.css"> 
         <script>
+            // Change background Button
             function changeColor(color) { 
-                document.body.style.background = color; 
-            }
-            // variables modal
-            let modal = document.getElementById('id01');
-
-            window.onclick = function(event) {
-                if (event.target == modal) {
-                modal.style.display = "none";
+                document.body.style.background = color;
+                let h = document.querySelectorAll("h1,h2,h3,h5")
+                let nav = document.querySelector("nav")
+                console.log(nav);
+                if (color == "black") {
+                    nav.style.background = color
+                    let a = document.querySelectorAll("nav a")
+                    a.forEach(element => {
+                        element.style.color = "white"
+                    });
+                }else{
+                    nav.style.background = color
+                    let a = document.querySelectorAll("nav a")
+                    a.forEach(element => {
+                        element.style.color = "black"
+                    });
                 }
+                h.forEach(element => {
+                    if (color == "black") {
+                        element.style.color = "white";
+                    }else{
+                        element.style.color = "black";
+                    }
+                    
+                });
             }
+            
         </script>
     </head>
     <body> 
@@ -32,16 +50,16 @@
 <!-- logo --> 
         <header class="container-fluid"> 
             <section id="logo" class="row">
-                <div class="col d-flex justify-content-center align">
-                    <a id="text" class="navbar-brand" href="#">emporium.</a>
+                <div class="col d-flex justify-content-center align d-none d-lg-flex">
+                    <h1>emporium.</h1>
                 </div>
             </section>
         </header>
 
 <!-- navbar -->
-        <nav class="navbar navbar-expand-lg sticky-top  navbar-expand-lg navbar-light bg-white">
+        <nav class="navbar navbar-expand-lg sticky-top  navbar-expand-lg navbar-light">
             <div class="container-fluid">
-                <a id="minilogo" class="navbar-brand" href="#">emporium.</a>
+                <a id="minilogo" class="navbar-brand d-lg-none" href="#">emporium.</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -66,13 +84,14 @@
                             <a class="nav-item nav-link" href="#section1">CONTACT</a>
                         </li>
                         <button onclick = "changeColor('white');" id="btn_white" class="btn btn-sm btn-outline-light" type="button"></bouton >
-                        <button onclick = "changeColor('black');" id="btn_black" class="btn btn-sm btn-outline-dark w-25" type="button"></bouton >
-                        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="btn btn-sm btn-outline-secondary">Connexion</button>
+                        <button onclick = "changeColor('black');" id="btn_black" class="btn btn-sm btn-outline-dark" type="button"></bouton >
+                        <button onclick="document.getElementById('form').style.display='block'" style="width:auto;" class="btn btn-sm btn-outline-secondary">Connexion</button>
                     </ul>
                     <div class="form">
-                        
-                        <div id="id01" class="w-50 p-3 modal">
-                            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+
+<!-- formulaire -->                       
+                        <div id="form" class="w-50 p-3 modal">
+                            <span onclick="document.getElementById('form').style.display='none'" class="close" title="Close Modal">&times;</span>
                             <form class="modal-content" action="/action_page.php">
                                 <div class="container">
                                     <h1>Sign Up</h1>
@@ -94,7 +113,7 @@
                                     <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
                             
                                     <div class="clearfix">
-                                        <button class="button" type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                        <button class="button" type="button" onclick="document.getElementById('form').style.display='none'" class="cancelbtn">Cancel</button>
                                         <button class="button" type="submit" class="signupbtn">Sign Up</button>
                                     </div>
                                 </div>
@@ -103,7 +122,8 @@
                     </div>
                 </div>
             </div>
-          </nav>
+        </nav>
+
 <!-- section 1 -->
         <section id="section1" class="container-fluid">
             <div id="shop" class="row">
@@ -121,7 +141,7 @@
         </section> 
 
 <!-- section 2 -->
-        <div id="section2" class="container">
+        <section id="section2" class="container">
             <div class="row">
                 <div id="cardone" class="mycard col-sm-3">
                     <p>Living Room</p> 
@@ -133,10 +153,10 @@
                     <p>Clothes</p>
                 </div>
             </div>
-        </div>
+        </section>
 
 <!-- section 3 -->
-        <div id="section3" class="container">
+        <section id="section3" class="container">
             <h3 id="text">Recent Products</h3>
             <div class="row products">
                 <div class="shopcard col-md-4">
@@ -201,73 +221,25 @@
                     <span class="color-red bold">$60.00</span>
                 </div>
             </div>
-        </div>
+        </section>
         
 <!-- section 4 -->
-        <div id="section4"  class="container-fluid">
+        <section id="section4"  class="container-fluid">
             <div>
                 <h4 class="text-white">Discover Thousands Of Great products</h4>
                 <a href="#" class="btn btn-dark">LEARN MORE</a>
             </div>
-        </div>
+        </section>
 
 <!-- section 5 -->
-        <div id="slider" class="container">
-            <div class="button-left slider-button">
-                <span> < </span>
-            </div>
-            <div class="button-right slider-button">
-                <span> > </span>
-            </div>
-            <div class="row">
-                <div class="slide slide1 showing">
-                    <div class="col">    
-                        <div class="slide-image">
-                            <img src="./public/img/clem-onojeghuo-EpicwyE9eac-unsplash.jpg" alt="Bulle dans Sable">
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="slide-image">
-                            <img src="./public/img/clem-onojeghuo-EpicwyE9eac-unsplash.jpg" alt="Bulle dans Sable">
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="slide-image">
-                            <img src="./public/img/clem-onojeghuo-EpicwyE9eac-unsplash.jpg" alt="Bulle dans Sable">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="slide slide2">
-                <div class="slide-image">
-                     
-                <div class="slide-image">
-                     
-                </div>
-                <div class="slide-image">
-                    
-                </div>
-            </div>
-            <div class="slide slide3">
-                <div class="slide-image">
-                    <img src="./public/img/dario-bronnimann-NwA9UWxGa6M-unsplash.jpg" alt="espace">
-                </div>
-                <div class="slide-image">
-                    <img src="./public/img/dario-bronnimann-NwA9UWxGa6M-unsplash.jpg" alt="espace">
-                </div>
-                <div class="slide-image">
-                    <img src="./public/img/dario-bronnimann-NwA9UWxGa6M-unsplash.jpg" alt="espace">
-                </div>
-            </div>
-        </div>
-
+        
 <!-- section 6 -->
-        <div id="section6" class="container my-4">
+        <section id="section6" class="container my-4">
             <div class="row">
                 <div class="col-sm-4 bg-white">
                     <i class="far fa-check-circle"></i>
                     <div class="card-body">
-                        <h5 class="card-title">TRUSTED BY 10,000+ CUSTOMERS</h5>
+                        <h4 class="card-title">TRUSTED BY 10,000+ CUSTOMERS</h4>
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptas distinctio deleniti quasi tenetur.</p>
                         <a href="#" class="btn btn-dark">LEARN MORE</a>
                     </div>
@@ -275,7 +247,7 @@
                 <div class="col-sm-4 bgred">
                     <i class="fas fa-paper-plane"></i>
                     <div class="card-body">
-                        <h5 class="card-title">VERY FAST SHIPPING</h5>
+                        <h4 class="card-title">VERY FAST SHIPPING</h4>
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi labore sequi saepe deleniti quasi tenetur.</p>
                         <a href="#" class="btn btn-light">LEARN MORE</a>
                     </div>
@@ -283,20 +255,20 @@
                 <div class="col-sm-4 bg-white">
                     <i class="far fa-check-circle"></i>
                     <div class="card-body">
-                        <h5 class="card-title">TRUSTED BY 10,000+ CUSTOMERS</h5>
+                        <h4 class="card-title">TRUSTED BY 10,000+ CUSTOMERS</h4>
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi labore sequi saepe deleniti quasi tenetur.</p>
                         <a href="#" class="btn btn-dark">LEARN MORE</a>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
 <!-- Footer -->
         <footer id="footer" class="footer text-center text-lg-start">
             <div class="container p-4">
                 <div class="row insid">
                     <div class="col-lg-4 col-md-12 mb-3 mb-md-0">
-                        <h5 class="text-uppercase">ABOUT US</h5>
+                        <h6 class="text-uppercase">ABOUT US</h6>
                         <p>
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
                         <br> Iste atque ea quis
@@ -307,7 +279,7 @@
                     </div>
                     
                     <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-                        <h5 class="text-uppercase">RECENTS POSTS</h5>
+                        <h6 class="text-uppercase">RECENTS POSTS</h6>
                         <ul class="recentposts mb-0">
                             <li>
                             <a href="#" class="text-white">> Hello World</a>
@@ -325,7 +297,7 @@
                     </div>
                     
                     <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-                        <h5 class="text-uppercase mb-0">TAG CLOUD</h5>
+                        <h6 class="text-uppercase mb-0">TAG CLOUD</h6>
                         <ul class="list-unstyled">
                             <li><a href="#">business</a></li>
                             <li><a href="#">confidence</a></li>
@@ -340,19 +312,18 @@
                         </ul>
                     </div>
                 </div>
-            </div>
-        
+            </div> 
+              
 <!-- Copyright -->
             <div class="text-center p-3" style="background-color: #000; color:rgb(85, 85, 85)">
             © COPYRIGHT 2020 GOODLAYERS ALL RIGHT RESERVED
             </div>
-    
         </footer>
         
 
 <!--lien JS-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-        <!-- <script type="module" src="./public/javascript/main.js"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+        <script type="module" src="./public/javascript/main.js"></script>
         
     </body>
 </html>

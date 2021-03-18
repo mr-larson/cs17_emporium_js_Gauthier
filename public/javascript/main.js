@@ -8,10 +8,5 @@ import * as module2 from "./_class.js";
 
 /*----------------- Main.js ------------------------*/
 
-/* navbar */
-let body = document.querySelector('body')
-let text = document.querySelectorAll('text')
-if (body('background-color')==='black') {
-  text.style.color = "#FFF"
-}
+
 
