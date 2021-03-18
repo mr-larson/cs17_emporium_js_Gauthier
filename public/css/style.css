@@ -306,7 +306,6 @@ nav #navbarNavAltMarkup .mynavbar #btn_connexion {
 }
 #section3 .shopcard img {
   height: 30vh;
-  width: 350px;
   padding-bottom: 20px;
 }
 
@@ -445,7 +444,7 @@ nav #navbarNavAltMarkup .mynavbar #btn_connexion {
   font-size: 0.8rem;
 }
 .footer .recentposts li a:hover {
-  text-shadow: 0 0 4px #b8b8b8;
+  text-shadow: 0 0 3px #b8b8b8;
   transition: 0.1s;
 }
 .footer .list-unstyled li {
@@ -463,7 +462,8 @@ nav #navbarNavAltMarkup .mynavbar #btn_connexion {
   text-decoration: none;
 }
 .footer .list-unstyled li a:hover {
-  box-shadow: 0 0 4px #b8b8b8;
+  box-shadow: 0 0 3px #b8b8b8;
+  text-shadow: 0 0 0.4px #b8b8b8;
   transition: 0.1s;
 }
 

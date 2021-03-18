@@ -1,4 +1,4 @@
-// function
+/* // function
 
 // Variables
 import * as module from "./_variables.js";
@@ -36,3 +36,4 @@ module.prevButton.addEventListener('click', () => {
   prevSlide()
 })
 
+ */
