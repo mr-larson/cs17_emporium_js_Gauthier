@@ -4,7 +4,28 @@
 @import "variables"
 
 /*---------------- style -------------*/    
-// section 5 carrousel
+// section 5
+#section5
+    h2
+        text-align: center
+
+#carousel
+    width: 70%
+    margin: auto
+    overflow: hidden
+    
+#carousel-inner
+    display: flex
+    text-align: center
+    transition: transform 0.5s linear
+    transform: translateX(0)
+    img
+        height: 20vh
+
+.divdiv
+    width: 25%
+    span
+        border-radius: 30px
 
 
 //section6
@@ -30,5 +51,7 @@
     a:hover
         box-shadow: 0 0 5px rgb(44, 41, 41)
         transition: 0.3s
-            
-                
+
+@media screen and (max-width: 1060px)            
+    .divdiv
+        flex: 0 0 100%                

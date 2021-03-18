@@ -50,31 +50,35 @@ nav {
   margin-bottom: 20px;
   background: #fff;
 }
-nav a {
-  padding-left: 30px;
-  letter-spacing: 2px;
-}
-nav a:hover {
-  font-weight: bold;
-}
-nav #navbarNavAltMarkup .mynavbar .nav-item {
+nav .mynavbar .nav-item {
   font-size: 10px;
   padding: 3px 14px;
 }
-nav #navbarNavAltMarkup .mynavbar .btn {
-  margin: 0 3px;
+nav .mynavbar .nav-item a {
+  padding-left: 30px;
+  letter-spacing: 2px;
 }
-nav #navbarNavAltMarkup .mynavbar #btn_white {
+nav .mynavbar .nav-item a:hover {
+  font-weight: bold;
+}
+nav .mynavbar .btn {
+  margin: 0 5px;
+}
+nav .mynavbar .btn:hover {
+  box-shadow: 0 0 8px #757575;
+  transition: 0.3s;
+}
+nav .mynavbar #btn_white {
   height: 15px;
   border: #757575 1px solid;
-  margin-top: 3px;
+  margin-top: 6px;
 }
-nav #navbarNavAltMarkup .mynavbar #btn_black {
+nav .mynavbar #btn_black {
   height: 15px;
   border: #757575 1px solid;
-  margin-top: 3px;
+  margin-top: 6px;
 }
-nav #navbarNavAltMarkup .mynavbar #btn_connexion {
+nav .mynavbar #btn_connexion {
   height: 28px;
 }
 
@@ -107,7 +111,7 @@ nav #navbarNavAltMarkup .mynavbar #btn_connexion {
 }
 
 .button:hover {
-  box-shadow: 0 0 5px #2c2929;
+  box-shadow: 0 0 9px #2c2929;
   transition: 0.3s;
 }
 
@@ -247,7 +251,7 @@ nav #navbarNavAltMarkup .mynavbar #btn_connexion {
   text-align: center;
 }
 #section2 .row .mycard:hover {
-  box-shadow: 0 0 4px #2c2929;
+  box-shadow: 0 0 7px #2c2929;
   transition: 0.3s;
 }
 
@@ -303,6 +307,7 @@ nav #navbarNavAltMarkup .mynavbar #btn_connexion {
   margin: auto;
 }
 #section3 .products .shopcard {
+  margin-bottom: 10px;
   padding: 10px;
 }
 #section3 .products .shopcard h3 {
@@ -349,10 +354,10 @@ nav #navbarNavAltMarkup .mynavbar #btn_connexion {
   opacity: 0.8;
 }
 #section3 .products .shopcard .ba:hover::before {
-  bottom: 15px;
+  bottom: 20px;
 }
 #section3 .products .shopcard .ba:hover::after {
-  bottom: 15px;
+  bottom: 20px;
 }
 
 #section4 {
@@ -408,6 +413,33 @@ nav #navbarNavAltMarkup .mynavbar #btn_connexion {
 }
 
 /*---------------- style -------------*/    
+#section5 h2 {
+  text-align: center;
+}
+
+#carousel {
+  width: 70%;
+  margin: auto;
+  overflow: hidden;
+}
+
+#carousel-inner {
+  display: flex;
+  text-align: center;
+  transition: transform 0.5s linear;
+  transform: translateX(0);
+}
+#carousel-inner img {
+  height: 20vh;
+}
+
+.divdiv {
+  width: 25%;
+}
+.divdiv span {
+  border-radius: 30px;
+}
+
 #section6 {
   text-align: center;
 }
@@ -431,6 +463,11 @@ nav #navbarNavAltMarkup .mynavbar #btn_connexion {
   transition: 0.3s;
 }
 
+@media screen and (max-width: 1060px) {
+  .divdiv {
+    flex: 0 0 100%;
+  }
+}
 /*footer*/
 /*-------------- lien sass --------------*/
 /*variables*/

@@ -8,5 +8,3 @@ import * as module2 from "./_class.js";
 
 /*----------------- Main.js ------------------------*/
 
-
-

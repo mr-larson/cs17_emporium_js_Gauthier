@@ -7,5 +7,4 @@ export let minilogo = document.querySelector("#minilogo")
 export let modal = document.getElementById('id01');
 
 
-
 // Export des Variables
