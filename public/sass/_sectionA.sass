@@ -53,7 +53,7 @@
         justify-content: space-around
         margin-top: 30px
 
-        .mycard
+        #cardone
             height: 17vh
             border-bottom: solid $white 1px
             border: solid 2px #42424246
@@ -69,10 +69,44 @@
                 border-bottom: solid 2px $white
                 width: 60%
                 text-align: center
+
+        #cardtwo
+            height: 17vh
+            border-bottom: solid $white 1px
+            border: solid 2px #42424246
+            display: flex
+            align-items: center
+            justify-content: center
+            background: url(../../public/img/service/service-2.jpg)
+            background-size: cover
+            color: $white
+            margin: auto
+            margin-bottom: 10px
+            p
+                border-bottom: solid 2px $white
+                width: 60%
+                text-align: center
+
+        #cardthree
+            height: 17vh
+            border-bottom: solid $white 1px
+            border: solid 2px #42424246
+            display: flex
+            align-items: center
+            justify-content: center
+            background: url(../../public/img/service/slider-3.jpg)
+            background-size: cover
+            color: $white
+            margin: auto
+            margin-bottom: 10px
+            p
+                border-bottom: solid 2px $white
+                width: 60%
+                text-align: center
         .mycard:hover 
                 box-shadow:  0 0 7px rgb(44, 41, 41)
                 transition: 0.3s
-                
+
 @media screen and ( max-width:800px  )
     .mycard 
         width: 80%!important

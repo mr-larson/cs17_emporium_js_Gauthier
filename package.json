@@ -4,7 +4,8 @@
   "main": "index.js",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.1",
-    "bootstrap": "^5.0.0-beta1"
+    "bootstrap": "^5.0.0-beta1",
+    "mdbootstrap": "^4.19.2"
   },
   "devDependencies": {},
   "scripts": {

@@ -16,7 +16,6 @@ window.addEventListener("scroll", () => {
 })
 
 // modal
-
 window.onclick = function(event) {
     if (event.target == module.modal) {
     module.modal.style.display = "none";
