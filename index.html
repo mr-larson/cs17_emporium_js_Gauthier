@@ -83,9 +83,16 @@
                         <li class="nav-item">
                             <a class="nav-item nav-link" href="#section1">CONTACT</a>
                         </li>
-                        <button onclick = "changeColor('white');" id="btn_white" class="btn btn-sm btn-outline-light" type="button"></bouton >
-                        <button onclick = "changeColor('black');" id="btn_black" class="btn btn-sm btn-outline-dark" type="button"></bouton >
-                        <button onclick="document.getElementById('form').style.display='block'" style="width:auto;" class="btn btn-sm btn-outline-secondary">Connexion</button>
+
+                        <li>
+                            <button onclick = "changeColor('white');" id="btn_white" class="btn btn-sm btn-outline-light mt-0" type="button"></bouton>
+                        </li>
+                        <li>
+                            <button onclick = "changeColor('black');" id="btn_black" class="btn btn-sm btn-outline-dark mt-0" type="button"></bouton >
+                        </li>
+                        <li>
+                            <button onclick="document.getElementById('form').style.display='block'" style="width:auto;" class="btn btn-sm btn-outline-secondary">Connexion</button>
+                        </li>
                     </ul>
                     
 <!-- formulaire -->                       
@@ -94,58 +101,65 @@
                             <span onclick="document.getElementById('form').style.display='none'" class="close" title="Close Modal">&times;</span>
                             <form class="modal-content" action="/action_page.php">
                                 <div class="container">
-                                
-                                    <!-- sign up -->
-                                    <h1 class="text-center border-bottom border-solid-secondary-1 p-3 mx-2">Sign Up</h1>
+                                    <div class="row">
+                                        <!-- sign up -->
+                                        <div class="col-6">
+                                            <h1 class="text-center border-bottom border-solid-secondary-1 p-3 mx-2">Sign Up</h1>
+                                            
+                                            <label for="email"><b>Email</b></label>
+                                            <input class="text myradius" type="text" placeholder="Enter Email" name="email" required>
                                     
-                                    <label for="email"><b>Email</b></label>
-                                    <input class="text myradius" type="text" placeholder="Enter Email" name="email" required>
-                            
-                                    <label for="psw"><b>Password</b></label>
-                                    <input class="text myradius" type="password" placeholder="Enter Password" name="psw" required>
-                                
-                                    <label>
-                                        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-                                    </label>
-                            
-                                    <div class="clearfix">
-                                        <!-- <button class="button" type="button" onclick="document.getElementById('form').style.display='none'" class="cancelbtn">Cancel</button> -->
-                                        <button class="button myradius" type="submit">Sign up</button>
-                                    </div>
-                                    <!-- registrer -->
-                                    <h1 class="text-center border-bottom border-solid-secondary-1 p-3 mx-2">Registrer</h1>
-                                    <div class="form-content">
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <input type="text" class="text myradius" placeholder="Your Name *" value=""/>
-                                                </div>
+                                            <label for="psw"><b>Password</b></label>
+                                            <input class="text myradius" type="password" placeholder="Enter Password" name="psw" required>
+                                        
+                                            <label>
+                                                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                                            </label>
+                                    
+                                            <div class="clearfix">
+                                                <!-- <button class="button" type="button" onclick="document.getElementById('form').style.display='none'" class="cancelbtn">Cancel</button> -->
+                                                <button class="button myradius" type="submit">Sign up</button>
                                             </div>
-                                            <div class="col-sm-5 col-md-6">
-                                                <div class="form-group">
-                                                    <input type="text" class="text myradius" placeholder="Phone Number *" value=""/>
-                                                </div>
-                                            </div>
-                                        </div>   
-                                        <div class="row">
-                                            <div class="col-xs-12"></div>
-                                                <div class="form-group">
-                                                    <input class="text myradius" type="text" placeholder="Enter Email" name="email" required>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <input type="text" class="text myradius" placeholder="Your Password *" value=""/>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <input type="text" class="text myradius" placeholder="Confirm Password *" value=""/>
+                                        </div>
+
+                                        <!-- registrer -->
+                                        <div class="col-6">
+                                            <h1 class="text-center border-bottom border-solid-secondary-1 p-3 mx-2">Registrer</h1>
+                                            <div class="form-content">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <input type="text" class="text myradius" placeholder="Your Name *" value=""/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-5 col-md-6">
+                                                        <div class="form-group">
+                                                            <input type="text" class="text myradius" placeholder="Phone Number *" value=""/>
+                                                        </div>
+                                                    </div>
+                                                </div>   
+                                                <div class="row">
+                                                    <div class="col-xs-12"></div>
+                                                        <div class="form-group">
+                                                            <input class="text myradius" type="text" placeholder="Enter Email" name="email" required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <input type="text" class="text myradius" placeholder="Your Password *" value=""/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <input type="text" class="text myradius" placeholder="Confirm Password *" value=""/>
+                                                        </div>
+                                                    </div>
+                                                    <button type="button" class="button myradius">Submit</button>
                                                 </div>
                                             </div>
                                         </div>
-                                        <button type="button" class="button myradius">Submit</button>
                                     </div>
+                                
                                 </div>
                             </form>
                         </div>
