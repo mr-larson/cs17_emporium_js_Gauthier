@@ -6,12 +6,11 @@
 
         <title> Emporium </title>
 
-        <!-- Lien Bootstrap -->
-        <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
         <!--lien Fontawesome-->
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
         <!--Lien CSS-->                                          
         <link rel="stylesheet" href="./public/css/style.css"> 
+
         <script>
             // Change background Button
             function changeColor(color) { 
@@ -46,7 +45,7 @@
     </head>
     <body> 
 <!-- logo --> 
-        <header class="container-fluid"> 
+        <header id="header" class="container-fluid"> 
             <section id="logo" class="row">
                 <div class="col d-flex justify-content-center align d-none d-lg-flex">
                     <h1>emporium.</h1>
@@ -55,7 +54,7 @@
         </header>
 
 <!-- navbar -->
-        <nav class="navbar navbar-expand-lg sticky-top  navbar-expand-lg navbar-light">
+        <nav id="navbar" class="navbar navbar-expand-lg sticky-top  navbar-expand-lg navbar-light">
             <div class="container-fluid">
                 <a id="minilogo" class="navbar-brand d-lg-none" href="#">emporium.</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -83,10 +82,10 @@
                         </li>
 
                         <li>
-                            <button onclick = "changeColor('white');" id="btn_white" class="btn btn-sm btn-outline-light mt-0" type="button"></bouton>
+                            <button onclick = "changeColor('white');" id="btn_white" class="btn btn-sm btn-outline-light mt-0" type="button"></button>
                         </li>
                         <li>
-                            <button onclick = "changeColor('black');" id="btn_black" class="btn btn-sm btn-outline-dark mt-0" type="button"></bouton >
+                            <button onclick = "changeColor('black');" id="btn_black" class="btn btn-sm btn-outline-dark mt-0" type="button"></button>
                         </li>
                         <li>
                             <button onclick="document.getElementById('form').style.display='block'" style="width:auto;" class="btn btn-sm btn-outline-secondary">Connexion</button>
@@ -401,7 +400,7 @@
                 </div>
                 <div class="col-sm-4 bg-white">
                     <div class="card-body">
-                        <i class="far fa-check-circle "></i>
+                        <i class="far fa-check-circle fa-3x my-2"></i>
                         <h4 class="card-title">TRUSTED BY 10,000+ CUSTOMERS</h4>
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi labore sequi saepe deleniti quasi tenetur.</p>
                         <a href="#" class="btn btn-dark">LEARN MORE</a>
@@ -471,8 +470,8 @@
         </footer>
         
 
+        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script> -->
 <!--lien JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
         <script type="module" src="./public/javascript/main.js"></script>
         
     </body>
